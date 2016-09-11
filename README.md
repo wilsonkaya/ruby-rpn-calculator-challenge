@@ -3,20 +3,23 @@
 # RPN (Reverse Polish Notation) Calculator Challenge
 
 Adapted from [this CodeWars exercise](http://www.codewars.com/kata/reverse-polish-notation-calculator/ruby),
- created by user [vgrichina](http://www.codewars.com/users/vgrichina).
+created by user [vgrichina](http://www.codewars.com/users/vgrichina).
 
 RPN, or [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation),
- is a convention for writing arithemetic expressions.
+is a convention for writing arithemetic expressions.
 Ordinarily, most arithemetic expressions are written as `1 + 2`: the operation
- is in the middle, with arguments (in this case, 1 and 2) on either side.
+is in the middle, with arguments (in this case, 1 and 2) on either side.
 In Polish Notation, this order is changed so that the operation comes
- before all of the arguments, i.e. `+ 1 2`.
+before all of the arguments, i.e. `+ 1 2`.
 
 _Reverse_ Polish Notation is almost the same, as Polish Notation, except that
  the operation comes _after_ all of the arguments, i.e. `1 2 +`
 
 Your challenge will be to create a simplified calculator for evaluating
- expressions written in RPN.
+expressions written in RPN.
+
+_Please note your calculator should be able to handle expressions with more_
+_than one operation._
 
 ## Prerequisites
 
@@ -40,9 +43,9 @@ cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
 ## Requirements
 
 Implement a method `calc` which, given a string of characters written in RPN,
- returns the result of the operations.
+returns the result of the operations.
 For now, the calculator should only implement four operations: `+`, `-`, `*`,
- or `/`.
+or `/`.
 
 Additionally, note that:
 
@@ -50,17 +53,17 @@ Additionally, note that:
 -   The calculator must also work with floating point numbers (i.e. decimals).
 
 For simplicity's sake, assume that all strings are properly formatted, with
- a single space between every character, and that your calculator will not be
- given any unusual operations (such as dividing by zero).
+a single space between every character, and that your calculator will not be
+given any unusual operations (such as dividing by zero).
 
 You should be running `rubocop` before diagnosing any bugs, since it finds
- some of the most common sources of errors.
+some of the most common sources of errors.
 After `rubocop` passes _your_ code (ignore any warnings about `spec_helper`),
- you should run `rake test` to run the included tests, which will tell you
- whether or not you've met requirements.
+you should run `rake test` to run the included tests, which will tell you
+whether or not you've met requirements.
 
 ## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
 1.  All software code is licensed under GNU GPLv3. For commercial use or
-     alternative licensing, please contact legal@ga.co.
+   alternative licensing, please contact legal@ga.co.
